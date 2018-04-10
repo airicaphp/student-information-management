@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Homepage</title>
+<link href="./css/Homepage.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table id="table1">
+<tr>
+<td id="td1"><img src="./image/utas.jpg" alt="Utas"/></td>
+<td id="td2"><img src="./image/utas2.jpg" alt="Utas"/></td>
+</tr>
+</table>
+ 
+<div id="templatemo_menu">     
+<ul>
+<li><a href="./Homepage.html" >Homepage </a></li>
+<li><a href="./Learning material.html">Learning Materials</a></li>
+<li><a href="./Discussion.html">Discussion</a></li>
+<li><a href="./Submission.php">Submission</a></li>
+<li><a href="./Contact Us.html">Contact Us</a></li>
+<li><a href="./Enrollment.php">Enrollment</a></li>
+</ul>
+<br><br> 	
+</div>
+
+
+<div id="time">
+Enter time:</br>
+<script> 
+var now=new Date() 
+document.write(1900+now.getYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()+" "+now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()) 
+</script>
+</div>
+
+<div id="content_section">
+<h2>Introduction</h2>
+<p>This website is to introduce mylo system of Tasmania. </br>Mylo system is designed for learning materials and managing your study. </p>
+<p>There are 5 LINKS reached different pages. </br>You can also CLICK pictures below to see more.</p>
+</div>
+
+<div id="content_section2">
+<table id="table2">
+<tr>
+<td id="img1"><img  src='./image/library.jpg'onclick="Cmd(this,'span1');" />
+<span id="span1" style="display:none;" onclick="Cmd(this,'img1');">
+<p><B>Employment, Awards, & Other Information:</B><br/><br />We offers fantastic great benefits, and a work environment that values dedication, learning, and a work-life balance. <br /><br/>We value our employees and are committed to helping individuals interested in a career at our university find the right job to fit their needs.</p>
+</span></td>
+<td id="img2"><img  src='./image/dormitory.jpg'onclick="Cmd(this,'span2');" />
+<span id="span2" style="display:none;" onclick="Cmd(this,'img2');">
+<p><B>Staff News:</B><br /><br />A Fortnightly Newsletter for University of Tasmania Staff, incorporating The University Diary</p>
+</span></td>
+<td id="img3"><img  src='./image/classroom.jpg'onclick="Cmd(this,'span3');" />
+<span id="span3" style="display:none;" onclick="Cmd(this,'img3');">
+<p><B>Learning & Teaching:</B><br /><br />The University of Tasmania is known worldwide for the excellence of its teaching and research and the quality of its graduates. <br /><br />Its reputation is endorsed by the Quality Assurance Agency (QAA) and by other external reviewers of learning and teaching, such as External Examiners.</span></td>
+</tr>
+</table>
+</div>
+<div>
+<script>
+function Cmd(v, id){
+v.style.display = "none";
+document.getElementById(id).style.display = "";}
+</script>
+</div>
+</body>
+</html>
